@@ -12,7 +12,7 @@ app.get('/', function(req, res) {
   res.sendfile('index.html');
   res.sendfile('index.css');
   res.sendfile('myScript.js');
-  res.sendfile('favicon.ico');
+  // res.sendfile('favicon.ico');
 
 });
 

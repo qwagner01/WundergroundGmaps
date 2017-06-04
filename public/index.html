@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <title> WundergroundGmaps </title>
   <link rel="stylesheet" type="text/css" href="index.css">
-  <link rel="icon" href="favicon.ico" type="image/icon">
+  <!-- <link rel="icon" href="favicon.ico" type="image/icon"> -->
 </head>
 
 <body>
@@ -16,8 +16,8 @@
   <button class="btn" id="button"> Click for the Weather </button>
   <p id="weather"></p>
   <button class="btn" id="button2"> About </button>
-  <p id="about"> This web app combines two technologies, the Google Maps API and the Wunderground API. When you the client click the map, the map returns coordinates. These coordinates are sent to the server which then passes them in query string and makes a request
-    to Wunderground for the weather based on the coordinates given. The server then send back the weather in the form of JSON back to you the client. Then the JSON is parsed and put into a string that you can read. </p>
+  <p id="about"> This web app combines two technologies, the Google Maps API and the Wunderground API. When you the client click the map, the map returns coordinates. These coordinates are sent to the server which then passes them in a query string and makes a request
+    to Wunderground for the weather based on the coordinates given. The server then sends back the weather in the form of JSON back to you the client.  The JSON is then parsed, put into a string, and then displayed so that you can read it. </p>
   <script src="myScript.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKypTXH7GzLV2S0FPo6JPquegE7aXlQFY&callback=myMap"></script>
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->

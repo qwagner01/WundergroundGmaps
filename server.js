@@ -8,13 +8,13 @@ app.use(bodyParser.json());
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/', function(req, res) {
-  res.sendfile('index.html');
-  //res.sendfile('index.css');
-  //res.sendfile('myScript.js');
-  // res.sendfile('favicon.ico');
-
-});
+// app.get('/', function(req, res) {
+//   res.sendfile('index.html');
+//   //res.sendfile('index.css');
+//   //res.sendfile('myScript.js');
+//   // res.sendfile('favicon.ico');
+//
+// });
 
 //Now I am playing third party server role
 app.post('/weather', function(req, res) {

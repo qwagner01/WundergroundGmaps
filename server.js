@@ -3,12 +3,17 @@ var cool = require('cool-ascii-faces');
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
+var favicon = require('serve-favicon')
+const favicon = require('express-favicon');
+var path = require('path');
 
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 app.get('/', function(req, res) {
   res.sendfile('index.html');
+  res.sendfile("favicon.ico")
 //   //res.sendfile('index.css');
 //   //res.sendfile('myScript.js');
 //   // res.sendfile('favicon.ico');
